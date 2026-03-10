@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fvalentim Transportes</title>
 
@@ -17,30 +17,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
-<header>
+<header class="header">
 
-<div class="container header-container">
+<div class="container nav-container">
 
 <div class="logo">
-<img src="logo.png">
+Fvalentim
 </div>
 
 <nav id="nav">
 
 <ul>
 <li><a href="#home">Home</a></li>
-<li><a href="#servicos">Serviços</a></li>
-<li><a href="#frota">Frota</a></li>
-<li><a href="#contato">Contato</a></li>
+<li><a href="#services">Serviços</a></li>
+<li><a href="#fleet">Frota</a></li>
+<li><a href="#contact">Contato</a></li>
 </ul>
 
 </nav>
 
-<div class="menu-btn" onclick="toggleMenu()">
+<div class="menu-toggle" onclick="toggleMenu()">
 <i class="fas fa-bars"></i>
 </div>
-
-<a class="btn" href="#contato">Solicitar Cotação</a>
 
 </div>
 
@@ -48,83 +46,74 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <section class="hero" id="home">
 
-<div class="container hero-content">
+<div class="hero-overlay"></div>
+
+<div class="hero-content reveal">
 
 <h1>Fvalentim Transportes</h1>
 
 <p>
-Soluções em transporte e logística em Santa Bárbara d'Oeste
-com segurança, agilidade e confiança.
+Logística moderna e transporte seguro
+em Santa Bárbara d'Oeste.
 </p>
 
-<a class="btn-primary" href="#contato">Fale Conosco</a>
+<a href="#contact" class="btn-primary">
+Solicitar Cotação
+</a>
 
 </div>
 
 </section>
 
-<section class="services" id="servicos">
+<section class="services container">
 
-<div class="container">
+<h2 class="section-title reveal">Nossos Serviços</h2>
 
-<h2>Nossos Serviços</h2>
+<div class="grid">
 
-<div class="cards">
-
-<div class="card">
+<div class="card reveal">
 <i class="fas fa-truck"></i>
 <h3>Carga Fechada</h3>
-<p>Transporte dedicado para sua carga.</p>
+<p>Transporte dedicado para sua empresa.</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <i class="fas fa-box"></i>
 <h3>Carga Fracionada</h3>
-<p>Compartilhamento logístico eficiente.</p>
+<p>Logística otimizada para pequenos volumes.</p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <i class="fas fa-shipping-fast"></i>
 <h3>Entrega Expressa</h3>
-<p>Transporte rápido e seguro.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-warehouse"></i>
-<h3>Logística</h3>
-<p>Soluções logísticas completas.</p>
-</div>
-
+<p>Rapidez e segurança para cargas urgentes.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="fleet" id="frota">
+<section class="fleet" id="fleet">
 
 <div class="container">
 
-<h2>Nossa Frota</h2>
+<h2 class="section-title reveal">Nossa Frota</h2>
 
-<div class="fleet-grid">
+<div class="grid">
 
-<div class="fleet-card">
-<img src="caminhao.jpg">
+<div class="fleet-card reveal">
+<img src="truck.jpg">
 <h3>Caminhão Baú</h3>
-<p>Ideal para cargas secas e transporte urbano.</p>
 </div>
 
-<div class="fleet-card">
-<img src="caminhao.jpg">
+<div class="fleet-card reveal">
+<img src="truck.jpg">
 <h3>Caminhão Truck</h3>
-<p>Alta capacidade para grandes volumes.</p>
 </div>
 
-<div class="fleet-card">
-<img src="caminhao.jpg">
-<h3>VUC</h3>
-<p>Veículo urbano para entregas rápidas.</p>
+<div class="fleet-card reveal">
+<img src="truck.jpg">
+<h3>VUC Urbano</h3>
 </div>
 
 </div>
@@ -135,29 +124,22 @@ com segurança, agilidade e confiança.
 
 <section class="map">
 
-<div class="container">
-
-<h2>Onde Estamos</h2>
-
 <iframe
 src="https://www.google.com/maps?q=Santa+Barbara+d'Oeste+SP&output=embed">
 </iframe>
 
-</div>
-
 </section>
 
-<section class="cta" id="contato">
+<section class="cta" id="contact">
 
-<div class="container">
+<div class="container reveal">
 
-<h2>Solicite um orçamento</h2>
+<h2>Precisa transportar sua carga?</h2>
 
-<p>Entre em contato conosco pelo WhatsApp</p>
+<p>Fale com nossa equipe.</p>
 
-<a class="btn-primary"
-href="https://wa.me/5511999999999">
-Falar no WhatsApp
+<a href="https://wa.me/5511999999999" class="btn-primary">
+WhatsApp
 </a>
 
 </div>
@@ -166,18 +148,13 @@ Falar no WhatsApp
 
 <footer>
 
-<div class="container">
-
 <p>© 2026 Fvalentim Transportes</p>
 
 <p>Santa Bárbara d'Oeste - SP</p>
 
-</div>
-
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/5511999999999">
+<a href="https://wa.me/5511999999999" class="whatsapp">
 
 <i class="fab fa-whatsapp"></i>
 
@@ -186,5 +163,4 @@ href="https://wa.me/5511999999999">
 <script src="script.js"></script>
 
 </body>
-
 </html>
