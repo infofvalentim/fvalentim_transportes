@@ -4,11 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fvalentim Transportes</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,7 +21,7 @@
 
 <div class="container nav">
 
-<h2 class="logo">Fvalentim</h2>
+<div class="logo">Fvalentim</div>
 
 <nav id="menu">
 
@@ -40,24 +43,25 @@
 
 </header>
 
-<section class="hero parallax" id="home">
+
+<section class="hero" id="home">
+
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
 <h1>Fvalentim Transportes</h1>
 
-<p>
-Logística moderna e transporte seguro em
-Santa Bárbara d'Oeste.
-</p>
+<p>Logística inteligente em Santa Bárbara d'Oeste</p>
 
-<a class="btn" href="#services">Conhecer Serviços</a>
+<a href="#services" class="btn">Conhecer Serviços</a>
 
 </div>
 
-<img src="truck.png" class="truck">
+<img src="images/truck.png" class="truck">
 
 </section>
+
 
 <section class="services container" id="services">
 
@@ -66,48 +70,66 @@ Santa Bárbara d'Oeste.
 <div class="grid">
 
 <div class="card">
-<h3>Carga Fechada</h3>
-<p>Transporte dedicado para cargas exclusivas.</p>
+<div class="icon">🚚</div>
+<h3>Transporte Rodoviário</h3>
+<p>Cargas seguras para todo o Brasil.</p>
 </div>
 
 <div class="card">
+<div class="icon">📦</div>
 <h3>Carga Fracionada</h3>
-<p>Logística otimizada para pequenos volumes.</p>
+<p>Soluções logísticas econômicas.</p>
 </div>
 
 <div class="card">
+<div class="icon">⚡</div>
 <h3>Entrega Expressa</h3>
-<p>Entrega rápida e segura.</p>
+<p>Rapidez e eficiência.</p>
 </div>
 
 </div>
 
 </section>
+
 
 <section class="fleet" id="fleet">
 
+<div class="container">
+
 <h2>Nossa Frota</h2>
 
-<div class="grid container">
+<div class="grid">
 
 <div class="fleet-card">
-<img src="fleet1.jpg">
+
+<img src="images/fleet1.jpg">
+
 <h3>Caminhão Baú</h3>
+
 </div>
 
 <div class="fleet-card">
-<img src="fleet2.jpg">
+
+<img src="images/fleet2.jpg">
+
 <h3>Caminhão Truck</h3>
+
 </div>
 
 <div class="fleet-card">
-<img src="fleet3.jpg">
+
+<img src="images/fleet3.jpg">
+
 <h3>Veículo Urbano</h3>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
+
 
 <section class="stats" id="stats">
 
@@ -117,15 +139,15 @@ Santa Bárbara d'Oeste.
 
 <h2 class="counter" data-target="12000">0</h2>
 
-<p>Entregas realizadas</p>
+<p>Entregas Realizadas</p>
 
 </div>
 
 <div>
 
-<h2 class="counter" data-target="800">0</h2>
+<h2 class="counter" data-target="900">0</h2>
 
-<p>Clientes atendidos</p>
+<p>Clientes Atendidos</p>
 
 </div>
 
@@ -133,25 +155,23 @@ Santa Bárbara d'Oeste.
 
 <h2 class="counter" data-target="15">0</h2>
 
-<p>Anos de experiência</p>
+<p>Anos de Experiência</p>
 
 </div>
 
 </div>
 
 </section>
+
 
 <section class="map-section" id="map">
 
-<div class="map-overlay">
-
-<h2>Atendemos todo Brasil</h2>
-
-<p>Base em Santa Bárbara d'Oeste</p>
-
-</div>
+<iframe
+src="https://maps.google.com/maps?q=Santa%20Barbara%20d'Oeste&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 </section>
+
 
 <footer>
 
@@ -161,7 +181,15 @@ Santa Bárbara d'Oeste.
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5511999999999">WhatsApp</a>
+
+<a class="whatsapp"
+href="https://wa.me/5511999999999"
+target="_blank">
+
+WhatsApp
+
+</a>
+
 
 <script src="script.js"></script>
 
