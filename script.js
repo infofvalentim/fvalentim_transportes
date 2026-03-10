@@ -1,7 +1,7 @@
 function toggleMenu(){
 
-const menu = document.querySelector("nav ul");
+const nav = document.getElementById("nav");
 
-menu.classList.toggle("show");
+nav.classList.toggle("active");
 
 }
