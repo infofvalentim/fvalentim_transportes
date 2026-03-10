@@ -19,13 +19,16 @@ margin:auto;
 header{
 background:#0b3d91;
 color:white;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .header-container{
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:20px 0;
+padding:15px 0;
 }
 
 .logo img{
@@ -35,7 +38,7 @@ height:60px;
 nav ul{
 display:flex;
 list-style:none;
-gap:20px;
+gap:25px;
 }
 
 nav a{
@@ -44,89 +47,114 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.menu-toggle{
+.menu-btn{
 display:none;
-font-size:28px;
+font-size:24px;
 cursor:pointer;
 }
 
 .btn{
 background:#ff6600;
 padding:10px 18px;
+border-radius:5px;
 color:white;
 text-decoration:none;
-border-radius:5px;
 }
 
 .hero{
-background:#1f4fbf;
+background:url(caminhao.jpg) center/cover;
 color:white;
-padding:120px 0;
+padding:160px 0;
 text-align:center;
+animation:fade 2s;
 }
 
 .hero h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:20px;
 }
 
 .btn-primary{
-display:inline-block;
-margin-top:20px;
 background:#ff6600;
 padding:12px 20px;
+border-radius:6px;
 color:white;
 text-decoration:none;
-border-radius:5px;
 }
 
 .services{
-padding:60px 0;
+padding:80px 0;
 text-align:center;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:30px;
 margin-top:40px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:.3s;
 }
 
-.stats{
-background:#0b3d91;
-color:white;
-padding:60px 0;
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:40px;
+color:#ff6600;
+margin-bottom:15px;
+}
+
+.fleet{
+padding:80px 0;
+text-align:center;
+background:#eee;
+}
+
+.fleet-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.fleet-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fleet-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.map{
+padding:80px 0;
 text-align:center;
 }
 
-.stats-grid{
-display:flex;
-justify-content:space-around;
-flex-wrap:wrap;
-gap:20px;
-}
-
-.stats h3{
-font-size:36px;
-}
-
-.specialties{
-padding:60px 0;
-text-align:center;
+.map iframe{
+width:100%;
+height:400px;
+border:none;
+border-radius:10px;
 }
 
 .cta{
 background:#ff6600;
 color:white;
 text-align:center;
-padding:60px 0;
+padding:80px 0;
 }
 
 footer{
@@ -136,27 +164,57 @@ text-align:center;
 padding:30px 0;
 }
 
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+}
 
-/* RESPONSIVO */
+/* animação */
 
-@media (max-width:768px){
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* responsivo */
+
+@media(max-width:768px){
+
+nav{
+position:absolute;
+top:70px;
+right:0;
+background:#0b3d91;
+width:200px;
+display:none;
+}
 
 nav ul{
 flex-direction:column;
-background:#0b3d91;
-position:absolute;
-top:80px;
-right:0;
-width:200px;
-display:none;
 padding:20px;
 }
 
-nav ul.show{
-display:flex;
+nav.active{
+display:block;
 }
 
-.menu-toggle{
+.menu-btn{
 display:block;
 }
 
