@@ -67,7 +67,17 @@
 
     <!-- HERO -->
     <section class="hero" id="home" aria-label="Apresentação">
+
+      <!-- SLIDES DE FUNDO -->
+      <div class="hero__slides" aria-hidden="true">
+        <div class="hero__slide hero__slide--active" style="background-image: url('images/hero.jpeg')"></div>
+        <div class="hero__slide" style="background-image: url('images/hero1.jpeg')"></div>
+        <div class="hero__slide" style="background-image: url('images/hero2.jpeg')"></div>
+        <div class="hero__slide" style="background-image: url('images/hero3.jpeg')"></div>
+      </div>
+
       <div class="hero__overlay" aria-hidden="true"></div>
+
       <div class="hero__content">
         <span class="hero__badge">
           <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
@@ -82,6 +92,14 @@
           <a href="#quote" class="btn btn--primary">Solicitar Cotação</a>
           <a href="#services" class="btn btn--outline">Nossos Serviços</a>
         </div>
+      </div>
+
+      <!-- INDICADORES -->
+      <div class="hero__dots" role="tablist" aria-label="Slides do carrossel">
+        <button class="hero__dot hero__dot--active" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+        <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+        <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slide 4"></button>
       </div>
 
     </section>
