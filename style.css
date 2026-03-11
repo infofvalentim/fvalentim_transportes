@@ -321,18 +321,6 @@ ul  { list-style: none; }
   flex-wrap: wrap;
 }
 
-.hero__truck {
-  position: absolute;
-  bottom: 28px;
-  left: -300px;
-  width: 260px;
-  filter: drop-shadow(0 6px 20px rgba(0,0,0,0.3));
-  animation: truckMove 14s linear infinite;
-}
-@keyframes truckMove {
-  0%   { left: -300px; }
-  100% { left: 110%; }
-}
 
 /* ════════════════════════════════════════
    SOBRE — BEM: .about
