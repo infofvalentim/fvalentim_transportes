@@ -28,10 +28,11 @@ Praticar e consolidar conceitos de desenvolvimento web front-end, desde HTML sem
 | Seção / Recurso | Conceito |
 |---|---|
 | Header fixo + menu mobile | Flexbox, `position: fixed`, toggle de classe |
-| Hero com parallax | `background-attachment: fixed`, gradiente overlay |
+| Hero com carrossel | `opacity` transition, `IntersectionObserver`, `setInterval` |
 | Seção Sobre | CSS Grid, posicionamento absoluto |
 | Cards de Serviços | `auto-fit`, `minmax()`, hover com transição |
 | Frota | Grid responsivo, `object-fit: cover` |
+| Barra de clientes | CSS `animation`, `mask-image`, loop infinito |
 | Contadores animados | `IntersectionObserver`, `setInterval` |
 | Formulários | Acessibilidade com `aria-*`, `role="status"` |
 | Depoimentos | `blockquote` semântico, CSS quotes |
@@ -53,10 +54,14 @@ luna_transportes/
 │   ├── menu.js        ← menu mobile + acessibilidade por teclado
 │   ├── counter.js     ← contadores animados
 │   ├── forms.js       ← formulários de cotação e contato
-│   └── scroll.js      ← header, voltar ao topo, smooth scroll, fade-in
+│   ├── scroll.js      ← header, voltar ao topo, smooth scroll, fade-in
+│   └── carousel.js    ← carrossel automático do hero com fade
 ├── images/
-│   ├── hero.jpeg
-│   ├── truck.png
+│   ├── logo.png       ← logo da empresa (fundo transparente)
+│   ├── hero.png       ← imagem principal do hero
+│   ├── hero1.png      ← caminhão no galpão
+│   ├── hero2.png      ← equipe
+│   ├── hero3.png      ← galpão Santa Bárbara d'Oeste
 │   ├── fleet1.png
 │   ├── fleet2.png
 │   └── fleet3.png
@@ -68,13 +73,15 @@ luna_transportes/
 ## ✅ Funcionalidades Implementadas
 
 - [x] Menu mobile com toggle e fechamento por ESC
-- [x] Parallax no hero (desativado em mobile)
+- [x] Carrossel automático no hero com fade entre slides
+- [x] Dots clicáveis no carrossel com pausa ao hover
+- [x] Logo da empresa no header
+- [x] Barra rolante infinita de clientes com pausa ao hover
 - [x] Contadores animados disparados pela viewport
 - [x] Formulário de cotação com feedback visual
 - [x] Formulário de contato com feedback visual
 - [x] Botão voltar ao topo
 - [x] Botão flutuante WhatsApp
-- [x] Caminhão animado no hero
 - [x] Fade-in escalonado nos cards ao rolar
 - [x] Sombra progressiva no header ao rolar
 - [x] Skip link para acessibilidade por teclado
