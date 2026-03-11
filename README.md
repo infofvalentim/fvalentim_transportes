@@ -2,7 +2,7 @@
 
 Site institucional desenvolvido como projeto de estudo front-end, simulando uma empresa de transportes e logística em Santa Bárbara d'Oeste - SP.
 
-🔗 **[Ver site ao vivo](https://infofvalentim.github.io/fvalentim_transportes/)**
+🔗 **[Ver site ao vivo](https://infofvalentim.github.io/luna_transportes/)**
 
 ---
 
@@ -87,8 +87,8 @@ luna_transportes/
 ## 🚀 Como Rodar Localmente
 
 ```bash
-git clone https://github.com/infofvalentim/fvalentim_transportes.git
-cd fvalentim_transportes
+git clone https://github.com/infofvalentim/luna_transportes.git
+cd luna_transportes
 
 # Abrir com Live Server (VS Code) ou qualquer servidor local
 # Não abrir direto como arquivo — os módulos JS precisam de servidor HTTP
