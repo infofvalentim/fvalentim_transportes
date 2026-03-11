@@ -613,6 +613,96 @@ ul  { list-style: none; }
 .coverage__item--plus { border-left-color: var(--red); color: var(--gray); font-style: italic; }
 
 /* ════════════════════════════════════════
+   CLIENTES — barra rolante infinita
+════════════════════════════════════════ */
+.clients {
+  background: white;
+  border-top: 1px solid #eaecf4;
+  border-bottom: 1px solid #eaecf4;
+  padding: 0;
+  overflow: hidden;
+}
+
+.clients__header {
+  text-align: center;
+  padding: 36px 0 20px;
+}
+
+.clients__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #aab;
+}
+
+.clients__track-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 0 36px;
+  /* Fade nas bordas */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.clients__track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.clients__track:hover { animation-play-state: paused; }
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.clients__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gray-light);
+  border: 1px solid #e4e8f0;
+  border-radius: 40px;
+  padding: 10px 22px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  transition: background var(--transition-fast),
+              border-color var(--transition-fast),
+              color var(--transition-fast),
+              transform var(--transition-fast);
+  cursor: default;
+}
+.clients__item:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+  transform: translateY(-2px);
+}
+.clients__item i {
+  font-size: 14px;
+  color: var(--blue);
+  transition: color var(--transition-fast);
+}
+.clients__item:hover i { color: white; }
+
+/* ════════════════════════════════════════
    DEPOIMENTOS — BEM: .testimonials / .testimonial-card
 ════════════════════════════════════════ */
 .testimonials { background: var(--gray-light); padding: 100px 0; }
